@@ -1,0 +1,442 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+{% load static %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Quanteka</title>
+    <link rel="icon" type="image/x-icon" href="../static/assets/images/dashimg/Favicon 16 x 16.png">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="../static/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="../static/assets/css/dashboard.css">
+  <link rel="stylesheet" href="../static/assets/css/owl.css">
+    <style>
+      #header{
+        margin-top: -20px;
+        }
+        #header .bgr{
+        background-color: #3C3C41;
+        height: 600px;
+        width: 100%;
+        margin-top: -50px;
+        }
+        
+        #header .bgr h1{
+        /* font-family: "Segoe UI", SegoeUI, "Segoe WP", Tahoma, Arial, sans-serif; */
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 43.2px;
+        display: block;
+        color: #FFFFFF;
+        padding-top: 100px;
+        padding-right: 70px;
+        text-align: center;
+        }
+        
+        #header .bgr p{
+        /* font-family: "Segoe UI", SegoeUI, "Segoe WP", Tahoma, Arial, sans-serif; */
+        font-size: 18px;
+        line-height: 23.4px;
+        text-decoration: none solid rgb(255, 255, 255);
+        text-align: center;
+        word-spacing: 0px;
+        color: #FFFFFF;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 25px;
+        }
+        
+        #header .container{
+        margin-top: -50px;
+        padding: 90px 90px;
+        }
+        
+        #header .bgr img{
+        height: 100%;
+        width: 100%;
+        margin-top: 140px;
+        }
+        
+        .bgr img{
+        border: 17px solid black;
+        border-radius: 15px;
+        /* box-shadow: 5px 5px 30px #b1b1b1; */
+        }
+        
+        
+        @media screen and (min-width: 280px)and (max-width: 400px){
+        
+        #header .container{
+          margin-top: 50px!important;
+          padding: 15px 15px!important;
+        }
+        
+        }
+        
+        @media screen and (min-width: 400px) and (max-width: 680px) { 
+        #header .container{
+          margin-top: 40px!important;
+          padding: 20px 20px!important;
+        }
+        }
+        
+        
+        
+        @media screen and (min-width: 680px)and (max-width: 820px){
+        
+        #header .container{
+          margin-top: 50px!important;
+          padding: 15px 15px!important;
+        }
+        
+        }
+        
+        @media screen and (min-width: 820px)and (max-width: 912px){
+        
+          #header .container{
+          margin-top: 40px!important;
+          padding: 1px 1px!important;
+          }
+          
+          }
+        
+        
+        /* ----------------question-------- */
+        
+        #question{
+        max-width: 1400px;
+        margin: 465px auto;
+        }
+        
+        #question li{
+        /* font-family: 'Poppins', sans-serif; */
+        font-size: 17px;
+        line-height: 27px;
+         }
+        
+         #question .keys{
+        padding-left: 50px;
+        padding-right: 100px;
+        padding-left: 40px;
+        padding-right: 30px;
+        margin-top: 50px;
+        }
+        
+        #question img{
+        height:100%;
+        width: 100%;
+        margin-top: 50px;
+        }
+        
+        #question .keys h3{
+        /* font-family: 'Poppins', sans-serif; */
+        font-weight: bold;
+        padding-left: 20px;
+        
+        }
+      
+      
+    </style>
+  </head>
+
+  <body>
+
+      <!-- ***** Preloader Start ***** -->
+  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <section class="sec hero-sec" id="home">
+      <div class="navigation"style="margin:50px auto">
+        <div class="nav-container">
+          <div class="brand mt-3">
+            <a href="/"><strong style="font-family: bold"><img class="cloud" src="../static/assets/images/dashimg/blue.png" /></strong></a>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <a id="nav-toggle" href="#!">
+                <span></span>
+              </a>
+            </div>
+            <ul class="nav-list mt-4">
+              <li><a href="/">Home</a></li>
+              <li><a href="/overview">Overview</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li>
+                <a href="/dashboard">Solutions</a>
+                {% comment %} <ul class="nav-dropdown">
+                  <li><a href="/dashboard">All</a></li>
+                  <li><a href="/dashboard">Health</a></li>
+                  <li><a href="/dashboard">Transport</a></li>
+                  <li><a href="/dashboard">Education</a></li>
+                  <li><a href="/dashboard">BFSI</a></li>
+                  <li><a href="/dashboard">Law</a></li>
+                  <li><a href="/dashboard">Real Eastate</a></li>
+                  <li><a href="/dashboard">Public</a></li>
+                  <li><a href="/dashboard">Energy</a></li>
+                  <li><a href="/dashboard">E-Commerce</a></li>
+                  <li><a href="/dashboard">Manifacturing</a></li>
+                  <li><a href="/dashboard">Other</a></li>
+                </ul> {% endcomment %}
+              </li>
+              <li><a href="/contact">Contact us</a></li>
+
+              <!-- <li><a href="#!">Sign Up</a></li>
+              <li><a href="#!">Login</a></li> -->
+              {% if request.user.id %}
+              <li><a href="/logout/">LOGOUT</a></li>
+          {% else %}
+              {% comment %} <li><a href="/register">SIGNUP</a></li> {% endcomment %}
+              {% comment %} <li><a href="/login">LOGIN</a></li> {% endcomment %}
+          {% endif %}
+     
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    
+   
+<section id="header">
+  <div class="bgr">
+    {% comment %} <h1>Share big insights for even bigger impact</h1>
+    <p>Create a data-driven culture throughout your organization. Easily share and collaborate on interactive data visualizations using Power BI Pro for self-service analytics.</p>  <br><br><br><br> {% endcomment %}
+    
+    <div class="container">
+          <img src="../static/assets/images/overviewimg/MicrosoftTeams-image (13).png" alt="">
+    </div>  
+  </div>
+</section> 
+
+
+
+<section id="question" >
+  <div class="container">
+      <div class="row">
+
+       <div class="col-sm-7">
+        <img src="../static/assets/images/overviewimg/Mockup 1 copy 16.png" alt="img not found" >
+      </div>
+
+          <div class="col-lg-5" style="margin-top: 50px;">
+             <div class="keys">
+              <h3>Pharmaceutical Analysis</h3>
+              <br>
+                <ul>
+                  <p><li> Pharmaceutical companies use Sales Dashboards to provide sales leaders with an easy way to track product performance. When used as part of good business practices in sales and Financial Planning & Analysis (FP&A) departments, a company can improve its revenue strategies and it can reduce the chances that managers react slow to sales issues because of lack of information. This pharma KPI dashboard provides a detailed overview of production quality via cost and time incurred in different quarters 
+                  </li>
+                  </p>
+                </ul>
+            </div>
+          </div>
+
+      </div>
+
+  </div>
+</section>
+
+
+<section id="question" style="margin-top:-200px;">
+ <div class="container">
+    
+     <div class="row">
+
+         <div class="col-lg-5" style="margin-top: 50px;">
+            <div class="keys">
+              <h3>Bank Exceutives</h3>
+              <br>
+               <ul>
+                <p><li>
+                Banks use Executive Financial Dashboards to give their leaders an easy way to monitor top level financial KPIs and to do comparisons across their business units. When used as part of good business practices in Executive and Financial Planning & Analysis (FP&A) departments, a company can improve its strategies and resulting financial results, and it can reduce the chances that senior leaders have to delay decision-processes due to lack of clear, real time metrics 
+                </li></p>
+               </ul>
+           </div>
+         </div>
+
+         <div class="col-sm-7">
+          <img src="../static/assets/images/overviewimg/Bank Executive.png " alt="img not found" >
+      </div>
+
+     </div>
+
+ </div>
+</section>
+
+
+<section id="question" style="margin-top: -200px;">
+ <div class="container">
+     <div class="row">
+
+      <div class="col-sm-7">
+         <img src="../static/assets/images/overviewimg/Mockup 1 copy 4.png" alt="img not found" >
+      </div>
+
+         <div class="col-lg-5" style="margin-top:50px;">
+            <div class="keys">
+              <h3>CR Management</h3>
+              <br>
+              <ul>
+               <p><li>
+                CRM analytics comprises all programming that analyzes data about customers and presents it to help facilitate and streamline better business decisions. CRM analytics can be considered a form of online analytical processing (OLAP) and may employ data mining. As companies have added new and often faster ways to interact with customers, the opportunity and the need to turn data collected about customers into useful information has become increasingly important. As a result, a number of software companies have developed products that perform customer data analysis, and analytics is a component of many CRM systems. 
+
+               </li></p>
+              </ul>
+           </div>
+         </div>
+
+     </div>
+
+ </div>
+</section>
+
+<section id="question" style="margin-top:-200px;">
+<div class="container">
+   
+    <div class="row">
+
+        <div class="col-lg-5" style="margin-top: 50px;">
+           <div class="keys">
+             <h3>HR Analytics Dashboard</h3>
+             <br>
+             <ul>
+              <p><li>
+                HRM Dashboard (also known as people analytics) is the collection and application of talent data to improve critical talent and business outcomes. HR analytics leaders enable HR leaders to develop data-driven insights to inform talent decisions, improve workforce processes and promote positive employee experience. Common data sources include internal data like demographic employee data, payroll data, social network data, performance data, and engagement data. External data sources can include labor market data, population data, LinkedIn data, and much more. Any data that's relevant for the specific project can be used.
+              
+                
+              </li></p>
+             </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-7">
+         <img src="../static/assets/images/overviewimg/Mockup 1 copy 8.png " alt="img not found" >
+     </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- Footer Starts Here -->
+<footer id="foot">
+  <div class="container foot">
+    <div class="row">
+      <div class="col-md-3 footer-item">
+        <h4>Get In Touch</h4>
+        <p>B-101 /1, Raheja Plaza, Lal Bahadur Shastri Rd,
+          Hiranandani Gardens, Panchkutir Ganesh Nagar, Ghatkoper West,
+          Mumbai, Maharashtra 400086</p>
+        <ul class="social-icons">
+          <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-item">
+        <h4>Company</h4>
+        <ul class="menu-list">
+          <li><a href="/about">About us</a></li>
+          <li><a href="/dashboard">Solutions</a></li>
+          <li><a href="/overview">Overview</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-item">
+        <h4>Help</h4>
+        <ul class="menu-list">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-item last-item">
+        <h4>Contact Us</h4>
+        <div class="contact-form">
+          <form id="contact footer-contact" action="" method="post">
+            {% csrf_token %}
+            <div class="row">
+              <input type="hidden" id="" name="form_name" value="Contact Us">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input name="number" type="text" class="form-control" id="number" pattern="^\d{10}$" placeholder="Mobile Number" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="filled-button">Submit</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="foot-brand mt-1">
+           <a href="#!"><strong style="font-family: bold"><img class="cloud-foot" src="./assets/images/images/bluelogo.png" /></strong></a>
+           <p>Power By</p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+         <p>Powered By<a href="#!"><strong style="font-family: bold"><img class="cloud-foot" src="../static/assets/images/bluelogo.png" /></strong></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+<!-- Additional Scripts -->
+<script src="../static/assets/js/custom.js"></script>
+<script src="../static/assets/js/owl.js"></script>
+<script src="../static/assets/js/slick.js"></script>
+<script src="../static/assets/js/accordions.js"></script>
+
+<script language = "text/Javascript"> 
+  cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+  function clearField(t){                   //declaring the array outside of the
+  if(! cleared[t.id]){                      // function makes it static and global
+      cleared[t.id] = 1;  // you could use true and false, but that's more typing
+      t.value='';         // with more chance of typos
+      t.style.color='#fff';
+      }
+  }
+</script>
+
+
+
+
+{% endblock  %}
+</body>
+</html>

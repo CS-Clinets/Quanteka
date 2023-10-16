@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .signup{
+                text-align:center;
+                margin-top:10%;
+            }
+
+            body{
+                background-image:url(../static/assets/images/login.jpg);
+                background-size:cover;
+                background-repeat:no-repeat;
+
+            }
+
+          
+
+        </style>
+
+
+
+
+    </head>
+
+
+
+    <body class="container-fluid">
+       
+        {% for message in messages %}
+        <p id="messages">{{message}}</p>
+    {% endfor %}
+    <form action="/verify-otp/" class="signup" method="POST"  >
+        {% csrf_token %}
+        <input type="hidden" name = 'next' value="{{ request.GET.next }}" />
+       <h1 style="color:white;"> Enter OTP: </h1>
+      <input type="text" name="otp" style="padding:20px;background:transparent;border-color:#bbbbbb; ">
+        <input  type="submit" value="Verify" style="width:100px;position:relative;margin-top:20px;padding:20px;background:transparent;color:white;border-radius:8px;border-color:#c2bebe;" >
+    </form>   
+
+    </body>
+</html>
+
+
+

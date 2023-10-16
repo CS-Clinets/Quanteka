@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+   
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Overview</h1>
+            {% comment %} <span>We are over 8 years of experience</span> {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-services">
+      <div class="container">
+        <div class="row" id="tabs">
+          <div class="col-md-4">
+            <ul>
+              <li><a href='#tabs-1'>HR Analysis <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>Bank Executive <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-3'>Health Dashboard <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>Scheme Management<br> Analytics <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="../static/assets/images/dashimg/dash9.png" alt="">
+                <h4>HR Analysis</h4>
+                <p>HRM Dashboard (also known as people analytics) is the collection and application of talent data to improve critical talent and business outcomes. HR analytics leaders enable HR leaders to develop data-driven insights to inform talent decisions, improve workforce processes and promote positive employee experience. Common data sources include internal data like demographic employee data, payroll data, social network data, performance data, and engagement data. External data sources can include labour market data, population data, LinkedIn data, and much more. Any data that's relevant for the specific project can be used.</p>
+              </article>
+              <article id='tabs-2'>
+                <img src="../static/assets/images/dashimg/dash5.png" alt="">
+                <h4>Bank Executive</h4>
+                <p>Banks use Executive Financial Dashboards to give their leaders an easy way to monitor top level financial KPIs and to do comparisons across their business units. When used as part of good business practices in Executive and Financial Planning & Analysis (FP&A) departments, a company can improve its strategies and resulting financial results, and it can reduce the chances that senior leaders have to delay decision-processes due to lack of clear, real time metrics.</p>
+              </article>
+              <article id='tabs-3'>
+                <img src="../static/assets/images/dashimg/health.png" alt="">
+                <h4>Health ICCC Dashboard</h4>
+                <p> The world of healthcare data analytics is vast and can encompass a wide variety of organizations and use cases.</p>
+              </article>
+              <article id='tabs-4'>
+                <img src="../static/assets/images/dashimg/scheme.png" alt="">
+                <h4>Scheme Management Analytics</h4>
+                <p>The agenda of the 7 resolves is 'bijili, sadakaurpani' and youth education, skill development and employment.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="../static/assets/images/tableau.png" title="1" alt="1">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/powerbi.png" title="2" alt="2" style="margin-top:-18px;">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/snowflake.png" title="3" alt="3"  style="margin-top:6px;">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/amazon.png" title="4" alt="4">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/datastudio.png" title="5" alt="5" style="margin-top:-2px;">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

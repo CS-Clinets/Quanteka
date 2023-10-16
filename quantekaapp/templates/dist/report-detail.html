@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>{{report.name}}</h1>
+            {% comment %} <span>We have over 20 years of experience</span> {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- hero -->
+    <div class="section2" id="sec2" > 
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div id="myvideo" class="dash-left wrap-element">    
+                <section id="report-container" class="wrapped-iframe embed-container col-lg-12">
+                </section>
+                <div class="error-container"></div>
+                
+              </div>
+              <button onclick="openFullscreen();" style="position:absolute;right:30px;margin-top: 15px;"><i class="fa-solid fa-expand"></i></button>  
+            </div> 
+              
+          </div>
+   
+        </div>
+
+
+    </div>
+    
+
+
+
+    <div class="section2" id="sec22"> 
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12 col-sm-12" style="margin-left:30px;">
+                {{report.description}}
+              </div>
+                    
+          </div>
+      </div>
+  </div>
+
+
+
+
+  
+<script>
+  var elem = document.getElementById("myvideo");
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+  </script>
+
+
+  
+
+  
+  
+{% endblock %}
+
+

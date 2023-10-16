@@ -1,0 +1,16 @@
+asgiref
+certifi
+cffi
+charset-normalizer
+cryptography
+Django
+idna
+msal
+pycodestyle
+pycparser
+PyJWT
+requests
+sqlparse
+toml
+tzdata
+environ

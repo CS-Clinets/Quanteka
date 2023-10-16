@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIL</title>
+
+    <style>
+        .cblue { 
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="cblue">{{subject}}</h2><br>
+    {% if fullname %}
+        <p><strong>Full Name: </strong>{{fullname}}</p>
+    {% endif %}
+    {% if email %}
+        <p><strong>Email: </strong>{{email}}</p>
+    {% endif %}
+    {% if mobileno %}
+        <p><strong>MobileNo: </strong>{{mobileno}}</p>
+    {% endif %}
+    {% if user_subject %}
+        <p><strong>UserSubject: </strong>{{user_subject}}</p>
+    {% endif %}
+    {% if user_message %}
+        <p><strong>Message: </strong>{{user_message}}</p>
+    {% endif %}
+    <b class="cblue">Thanks & Regards</b>   
+</body>
+</html>

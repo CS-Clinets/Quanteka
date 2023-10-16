@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+   
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Blog</h1>
+            {% comment %} <span>We are over 8 years of experience</span> {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-services">
+      <div class="container">
+        <div class="row" id="tabs">
+          <div class="col-md-4">
+            <ul>
+              <li><a href='#tabs-1'>HR Analysis <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>Bank Executive <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-3'>Crime Report <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>Real Estate <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="../static/assets/images/dashimg/dash9.png" alt="">
+                <h4>HR Analysis</h4>
+                <p>HRM Dashboard (also known as people analytics) is the collection and application of talent data to improve critical talent and business outcomes. HR analytics leaders enable HR leaders to develop data-driven insights to inform talent decisions, improve workforce processes and promote positive employee experience. Common data sources include internal data like demographic employee data, payroll data, social network data, performance data, and engagement data. External data sources can include labour market data, population data, LinkedIn data, and much more. Any data that's relevant for the specific project can be used.</p>
+              </article>
+              <article id='tabs-2'>
+                <img src="../static/assets/images/dashimg/dash5.png" alt="">
+                <h4>Bank Executive</h4>
+                <p>Banks use Executive Financial Dashboards to give their leaders an easy way to monitor top level financial KPIs and to do comparisons across their business units. When used as part of good business practices in Executive and Financial Planning & Analysis (FP&A) departments, a company can improve its strategies and resulting financial results, and it can reduce the chances that senior leaders have to delay decision-processes due to lack of clear, real time metrics.</p>
+              </article>
+              <article id='tabs-3'>
+                <img src="../static/assets/images/dashimg/dash2.png" alt="">
+                <h4>Crime Report</h4>
+                <p> Crime Dashboard offers information about relevant crime data and serves to improve information-sharing and transparency. This dashboard includes crime data, comprising crime statistics, arrested criminals, criminal complaints, solved cases, etc. which aids quick comprehension of the underlying data. 
+
+                  View state and agency-level data for specific crimes, including year-over-year or multi-year comparisons 
+                  
+                  Generate trend analysis by type of offense 
+                  
+                  Compare data and key performance indicators (KPIs) across agencies 
+                  
+                  Criminal incidents 
+                  
+                  Wellbeing checks 
+                  
+                  Disturbances 
+                  
+                  Safety escorts 
+                  
+                  Lost and/or stolen property 
+                  
+                  Lockouts 
+                  
+                  Suspicious activity 
+                  
+                  Alarms 
+                  
+                  Trespassing </p>
+              </article>
+              <article id='tabs-4'>
+                <img src="../static/assets/images/dashimg/dash12.png" alt="">
+                <h4>Real Estate</h4>
+                <p>The incorporation of modern technologies like data intelligence dashboard has been revolutionising the real estate market, driving it into the current phase. Multiple organisations have already shifted to big data to analyse and estimate property purchases, manage portfolios, calculate profits, etc., indicating the prospects of data intelligence in the real estate industry to be extensive and boundless.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="../static/assets/images/tableau.png" title="1" alt="1">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/powerbi.png" title="2" alt="2" style="margin-top:-18px;">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/snowflake.png" title="3" alt="3"  style="margin-top:6px;">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/amazon.png" title="4" alt="4">
+              </div>
+              
+              <div class="partner-item">
+                <img src="../static/assets/images/datastudio.png" title="5" alt="5" style="margin-top:-2px;">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
